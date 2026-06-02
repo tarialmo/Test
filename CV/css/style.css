@@ -56,7 +56,7 @@ ul {
 
 .page__body {
   min-width: 1280px;
-  margin: 0;
+  margin: 0 auto;
   color: #000000;
   background-color: #f2f2f2;
 }
@@ -357,3 +357,6 @@ section:not(.contacts) {
   color: white;
   font-weight: 700;
 }
+
+
+
