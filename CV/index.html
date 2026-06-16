@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>CV file</title>
+</head>
+<body class="page__body">
+  <div class="page__wrapper">
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="main-nav__link site-list__link site-list__link--active" href="#contacts">My contacts</a>
+          </li>
+          <li class="main-nav__list site-list__item">
+            <a class="main-nav__link site-list__link" href="#bio">About me</a>
+          </li>
+          <li class="main-nav__list site-list__item">
+            <a class="main-nav__link site-list__link" href="#skills">Skills</a>
+          </li>
+          <li class="main-nav__list site-list__item">
+            <a class="main-nav__link site-list__link" href="#code">Code</a>
+          </li>
+          <li class="main-nav__list site-list__item">
+            <a class="main-nav__link site-list__link" href="#edu">Education</a>
+          </li>
+          <li class="main-nav__list site-list__item">
+            <a class="main-nav__link site-list__link" href="#lang">Language</a>
+          </li>
+          <li class="main-nav__list site-list__item">
+            <a class="main-nav__link site-list__link" href="#project">Project</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main main">
+      <div class="main__column column-left">
+        <img class="main__photo" src="img/photo.jpg" alt="Photo @ka4ka">
+        <h1 class="main__title">Ekaterina (Kate) Klimova</h1>
+        <section class="contacts" id="contacts">
+          <h2 class="contacts__title">My contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <strong>E-mail:</strong>
+              <a href="mailto:klimova_kate@yahoo.com">klimova_kate</a>
+            </li>
+            <li class="contacts__item">
+              <strong>GitHub:</strong>
+              <a href="https://github.com/kate-rin-a">kate-rin-a</a>
+            </li>
+            <li class="contacts__item">
+              <strong>Telegram:</strong>
+              <a href="https://t.me/ka4_ka">@ka4_ka</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main__column column-right">
+      <section class="bio" id="bio">
+        <h2 class="bio__title">About me</h2>
+        <blockquote>
+          <p class="bio__quote">“Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.” —
+          <span class="bio__author">Henry Ford</span>
+          </p>
+        </blockquote>
+        <p class="bio__text">
+          I am Ekaterina. I am in my late 30s and have been studying the frontend for a few years with a practical goal - to improve my analytical thinking and keep my mind sharp.
+        </p>
+        <p class="bio__text">
+          Before joining Rs School, I had been studying programming on my own and had even successfully completed a course as a front-end developer at the HTML Academy.<br> However, I still felt the need to practice and consolidate the knowledge and skills I had acquired. To overcome this uncertainty, I decided to become a student at Rs School and<br> I believe this course will help me gain more confidence in myself.
+        </p>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="skills__title">My (current) skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">HTML</li>
+          <li class="skills__item">CSS
+            <ul>
+              <li>LESS, SCSS</li>
+              <li>BEM</li>
+            </ul>
+          </li>
+          <li class="skills__item">Git, GitHub</li>
+          <li class="skills__item">Gulp</li>
+          <li class="skills__item">JavaScript
+            <ul>
+              <li>Basic</li>
+              <li>DOM</li>
+            </ul>
+          </li>
+          <li class="skills__item">Figma</li>
+        </ul>
+      </section>
+      <section class="edu" id="edu">
+        <h2 class="edu__title">Education</h2>
+        <dl class="edu__list">
+            <dt>Community colledge:</dt>
+            <dd>Lipetsk State сolledge of arts</dd>
+            <dt>Academy: </dt>
+            <dd>Voronezh State academy of arts</dd>
+            <dt>Course:</dt>
+            <dd><a href="https://htmlacademy.ru/study">HTML Academy</a></dd>
+        </dl>
+      </section>
+      <section class="code" id="code">
+        <h2 class="code__title">Code</h2>
+        <h3 class="code__subtitle"><a class="code__link" href="https://www.codewars.com/kata/5733f948d780e27df6000e33">Task</a> from <strong>CodeWars</strong> :</h3>
+        <p class="code__task">Coding in function cutCube. function accept 2 parameter: volume and n. volume is the volume of a cube. If we cut the cube into n block. please determine whether the length of the cube is an integer. return true or false.</p>
+        <div class="code__wrapper">
+          <code>
+            function cutCube(volume,n){<br>
+              &nbsp;&nbsp;let result = (Math.cbrt(n) === parseInt(Math.cbrt(n))) ?<br>
+              &nbsp;&nbsp;Math.cbrt(volume/n) : false;<br>
+              &nbsp;&nbsp;return result === parseInt(result);<br>
+            }
+            </code>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <h2 class="project__title">Project</h2>
+        <a href="https://kate-rin-a.github.io/rsschool-cv/cv">CV file</a>
+      </section>
+      <section class="lang" id="lang">
+        <h2 class="lang__title">Language</h2>
+        <ul class="lang__list">
+          <li class="lang__item">Russian <em>(native)</em></li>
+          <li class="lang__item">English <em>(intermediate)</em></li>
+          <li class="lang__item">Japanese <em>(beginner)</em></li>
+        </ul>
+      </section>
+    </div>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="https://rs.school/courses/javascript-preschool-ru">
+        <img src="img/rs_school_js.svg" width="150" height="56" alt="the Rolling school logo">
+      </a>
+        <a class="page-footer__link" href="https://github.com/kate-rin-a">GitHub@kate-rin-a</a>
+      <span>2024</span>
+    </footer>
+  </div>
+</body>
+</html>
